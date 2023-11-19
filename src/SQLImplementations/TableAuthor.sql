@@ -6,3 +6,4 @@
 
 INSERT INTO Author values('1','JJ Rousseaux','H');
  INSERT INTO Author values('2','Jules Mainard','H')
+ INSERT INTO Author values('3','Luc Hervé','H')

@@ -7,3 +7,4 @@
 
  INSERT INTO Subscribers values('1','Albert','H','SD124');
  INSERT INTO Subscribers values('2','EL OAH','H','SD135');
+ INSERT INTO Subscribers values('3','SAH','F','SD12535');

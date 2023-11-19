@@ -11,4 +11,5 @@ CREATE TABLE IF NOT EXISTS Book(
 );
 
  INSERT INTO Book values(1,'Le Navire',250,'ROMMAN','2005-02-27','1',true);
- INSERT INTO Book values(2,'L''ARES ET L''OPUS DE I',300,'1970-10-10','2',false);
+ INSERT INTO Book values(2,'L''ARES ET L''OPUS DE I',300,'OTHER','1970-12-12','2',false);
+ INSERT INTO Book values(3,'MOMIE',60,'COMMEDY','2005-10-26','1',true);
