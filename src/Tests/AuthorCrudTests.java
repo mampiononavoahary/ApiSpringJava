@@ -12,18 +12,20 @@ public class AuthorCrudTests {
         AuthorCrudOperations authorCrudOperations = new AuthorCrudOperations();
 
 
-        authorCrudOperations.findAll();
-        Author author = new Author("2","NAIVO","H");
+
+        Author author = new Author("3","NAIVO","H");
         authorCrudOperations.save(author);
 
         List<Author> SaveAllAuthors = new ArrayList<>();
-        SaveAllAuthors.add(new Author("3" , "SAM" , "H")) ;
-        SaveAllAuthors.add(new Author("4" ,"LUX" , "F")) ;
+        SaveAllAuthors.add(new Author("1" , "SAM" , "H")) ;
+        SaveAllAuthors.add(new Author("2" ,"LUX" , "F")) ;
         List<Author> savedAuthors = authorCrudOperations.saveAll(SaveAllAuthors);
         System.out.println("Saved Authors:");
         for (Author authors : savedAuthors) {
             System.out.println(authors);
         }
+
+        authorCrudOperations.findAll();
 
         Author DeleteAuthor = author;
         Author removeAuthor = authorCrudOperations.delete(DeleteAuthor);
