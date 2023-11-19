@@ -7,12 +7,18 @@ public class Book {
 
   private String bookName;
   private int pageNumbers;
-  private String topicEnum;
+  private Topic topicEnum;
   private Date releaseDate;
   private String authorId;
   private boolean status;
 
-    public Book(int id, String bookName, int pageNumbers, String topicEnum, String releaseDate, String authorId, boolean status) {
+    public enum Topic {
+        ROMMAN,
+        COMMEDY,
+        OTHER,
+    }
+
+    public Book(int id, String bookName, int pageNumbers, Topic topicEnum, String releaseDate, String authorId, boolean status) {
         this.id = id;
         this.bookName = bookName;
         this.pageNumbers = pageNumbers;
@@ -46,11 +52,11 @@ public class Book {
         this.pageNumbers = pageNumbers;
     }
 
-    public String getTopicEnum() {
+    public Topic getTopicEnum() {
         return topicEnum;
     }
 
-    public void setTopicEnum(String topicEnum) {
+    public void setTopicEnum(Topic topicEnum) {
         this.topicEnum = topicEnum;
     }
 
